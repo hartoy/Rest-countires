@@ -34,6 +34,9 @@ body.dark .changer{
     color:black;
 }
 
+.limit {
+    display: none !important;
+}
 .show {
     display: block !important;
 }

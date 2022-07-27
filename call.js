@@ -73,15 +73,23 @@ searcher()
 
 filterSelection("all")
 function filterSelection(c) {
-  var x, i
+  var x, i, limit
   x = document.getElementsByClassName("card")
+  console.log(x)
+  limit = document.getElementsByClassName("limit")
+  console.log(limit)
   if (c == "World") c = ""
-  //console.log("esto es c:", c) el continente que clickeas
   for (i = 0; i < x.length; i++) {
-    //console.log("esto es i:", x[i]) recorre todas las cards
     w3RemoveClass(x[i], "show")
     if (x[i].className.indexOf(c) > -1) {
       w3AddClass(x[i], "show")
+    }
+  }
+
+  for (i = 0; i < limit.length; i++) {
+    w3RemoveClass(limit[i], "show")
+    if (x[i].className.indexOf(c) > -1) {
+      w3AddClass(limit[i], "show")
     }
   }
 }
@@ -107,6 +115,4 @@ function w3RemoveClass(element, name) {
     }
   }
   element.className = arr1.join(" ")
-
-  var limit = document.getElementsByClassName("limit")
 }
