@@ -1,11 +1,16 @@
-
+.nav,
+.info,
+.big-title,
+.card
+{
+    font-family: 'Nunito Sans', sans-serif;
+}
 
 body.dark {
     background-color: #212E37 !important;
     color: white;
 }
 
-/* #9b59b6 */
 
 body.dark .dropdown-toggle,
 body.dark .card,
@@ -54,6 +59,10 @@ a {
     width: 200px;
 }
 
+.moon {
+    margin-right: 0px;
+}
+
 .dropdown-menu{
     width: 200px;
     color:black;
@@ -85,6 +94,17 @@ a {
     width: 500px;
 }
 
+@media (min-width: 1024px) and (max-width: 1200px){
+    .flag-detail {
+            height: 320px;
+            width: 440px;
+        }
+
+   .card{
+    width:100%;
+   }     
+}
+
 .first-column{
     margin-right: 70px;
 }
@@ -112,4 +132,5 @@ ion-icon{
         width: 94vw;
     }
 }
+
 

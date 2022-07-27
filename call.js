@@ -46,30 +46,30 @@ function callInfo() {
   document.querySelector(".all-cards").innerHTML = htmlCompiledAllCards
 }
 
-function searcher() {
-  $(document).ready(function () {
-    $("#myInput").on("keyup", function () {
-      var value = $(this).val().toLowerCase()
-      $(".all-cards > div").filter(function () {
-        $(this).toggle($(this).text().toLowerCase().indexOf(value) > -1)
-        $("#not-found").hide()
-        var noResult = true
-        $(".all-cards")
-          .children("div")
-          .each(function () {
-            if ($(this).children(":visible").length != 0) {
-              noResult = false
-            }
-          })
-        if (noResult) {
-          $("#not-found").show()
-        }
+;(function ($) {
+  function searcher() {
+    $(document).ready(function () {
+      $("#myInput").on("keyup", function () {
+        var value = $(this).val().toLowerCase()
+        const limit = document.getElementsByClassName("limit")
+        // console.log(limit)
+        // console.log($(".limit"))
+
+        $(".limit").each(function () {
+          let country = this.getAttribute("id").toLowerCase()
+          // console.log(country.indexOf(value))
+
+          if (country.indexOf(value) < 0) {
+            $(this).removeClass("show")
+          } else {
+            $(this).addClass("show")
+          }
+        })
       })
     })
-  })
-}
-
-searcher()
+  }
+  searcher()
+})(jQuery)
 
 filterSelection("all")
 function filterSelection(c) {
