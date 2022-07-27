@@ -1,136 +1,128 @@
 .nav,
 .info,
 .big-title,
-.card
-{
-    font-family: 'Nunito Sans', sans-serif;
+.card {
+  font-family: "Nunito Sans", sans-serif;
 }
 
 body.dark {
-    background-color: #212E37 !important;
-    color: white;
+  background-color: #212e37 !important;
+  color: white;
 }
-
 
 body.dark .dropdown-toggle,
 body.dark .card,
 body.dark .dropdown-menu,
 body.dark .dropdown-item,
-body.dark input{
-    color: white;
-    background-color: #2B3743
+body.dark input {
+  color: white;
+  background-color: #2b3743;
 }
 
-body.dark .changer{
-    color:white;
+body.dark .changer {
+  color: white;
 }
-.grey{
-    background-color: #2B3743 !important;
-    color:white;
-}
-
-.changer{
-    border:none !important;
+.grey {
+  background-color: #2b3743 !important;
+  color: white;
 }
 
-.card{
-    width: 280px;
-    display:none !important;
-    color:black;
+.changer {
+  border: none !important;
+}
+
+.card {
+  width: 280px;
+  display: none !important;
+  color: black;
 }
 
 .limit {
-    display: none !important;
+  display: none !important;
 }
 .show {
-    display: block !important;
+  display: block !important;
 }
 
-input{
-    height: 60px;
+input {
+  height: 60px;
 }
 
 a {
-    color:inherit !important;
+  color: inherit !important;
 }
 
-.filter-button{
-    height: 60px;
-    width: 200px;
+.filter-button {
+  height: 60px;
+  width: 200px;
 }
 
 .moon {
-    margin-right: 0px;
+  margin-right: 0px;
 }
 
-.dropdown-menu{
-    width: 200px;
-    color:black;
+.dropdown-menu {
+  width: 200px;
+  color: black;
 }
 
-.flag{
-    height: 185px;
-    width: 100%;
+.flag {
+  height: 185px;
+  width: 100%;
 }
-.dropdown-toggle::after{
-    margin-left: 10px !important;
+.dropdown-toggle::after {
+  margin-left: 10px !important;
 }
 
-.dropdown-toggle{
-    color:black;
+.dropdown-toggle {
+  color: black;
 }
 
 @media (min-width: 768px) {
-    input {
-            width: 500px !important;
-        }
+  input {
+    width: 500px !important;
+  }
 }
 
-
-
-
-.flag-detail{
-    height: 350px;
-    width: 500px;
+.flag-detail {
+  height: 350px;
+  width: 500px;
 }
 
-@media (min-width: 1024px) and (max-width: 1200px){
-    .flag-detail {
-            height: 320px;
-            width: 440px;
-        }
+@media (min-width: 1024px) and (max-width: 1200px) {
+  .flag-detail {
+    height: 320px;
+    width: 440px;
+  }
 
-   .card{
-    width:100%;
-   }     
+  .card {
+    width: 100%;
+  }
 }
 
-.first-column{
-    margin-right: 70px;
+.first-column {
+  margin-right: 70px;
 }
 
-.back-button{
-    width:100px;
-    align-items: center;
+.back-button {
+  width: 100px;
+  align-items: center;
 }
 
-ion-icon{
-    margin-right:10px;
-    padding-left:5px;
+ion-icon {
+  margin-right: 10px;
+  padding-left: 5px;
 }
 
 @media (max-width: 912px) {
-    .flag-detail {
-            height: 215px;
-            width: 335px;
-        }
+  .flag-detail {
+    height: 215px;
+    width: 335px;
+  }
 }
-
 
 @media (max-width: 540px) {
-    .flag-detail {
-        width: 94vw;
-    }
+  .flag-detail {
+    width: 94vw;
+  }
 }
-
-
