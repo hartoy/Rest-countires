@@ -1,0 +1,112 @@
+
+
+body.dark {
+    background-color: #212E37 !important;
+    color: white;
+}
+
+/* #9b59b6 */
+
+body.dark .dropdown-toggle,
+body.dark .card,
+body.dark .dropdown-menu,
+body.dark .dropdown-item,
+body.dark input{
+    color: white;
+    background-color: #2B3743
+}
+
+body.dark .changer{
+    color:white;
+}
+.grey{
+    background-color: #2B3743 !important;
+    color:white;
+}
+
+.changer{
+    border:none !important;
+}
+
+.card{
+    width: 280px;
+    display:none !important;
+    color:black;
+}
+
+.show {
+    display: block !important;
+}
+
+input{
+    height: 60px;
+}
+
+a {
+    color:inherit !important;
+}
+
+.filter-button{
+    height: 60px;
+    width: 200px;
+}
+
+.dropdown-menu{
+    width: 200px;
+    color:black;
+}
+
+.flag{
+    height: 185px;
+    width: 100%;
+}
+.dropdown-toggle::after{
+    margin-left: 10px !important;
+}
+
+.dropdown-toggle{
+    color:black;
+}
+
+@media (min-width: 768px) {
+    input {
+            width: 500px !important;
+        }
+}
+
+
+
+
+.flag-detail{
+    height: 350px;
+    width: 500px;
+}
+
+.first-column{
+    margin-right: 70px;
+}
+
+.back-button{
+    width:100px;
+    align-items: center;
+}
+
+ion-icon{
+    margin-right:10px;
+    padding-left:5px;
+}
+
+@media (max-width: 912px) {
+    .flag-detail {
+            height: 215px;
+            width: 335px;
+        }
+}
+
+
+@media (max-width: 540px) {
+    .flag-detail {
+        width: 94vw;
+    }
+}
+
